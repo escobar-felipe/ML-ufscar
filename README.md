@@ -7,7 +7,7 @@ Você pode encontrar video-aulas feitas pelo Professor Rafael Izbicki sobre os c
 </p>
  <ul>
 <li>
-<a href="https://github.com/escobar-felipe/ML-ufscar/blob/main/Lista_01.ipynb" target="_blank" rel="noopener">Lista 01</a></li>
+<a href="https://github.com/escobar-felipe/ML-ufscar/tree/main/Lista_01" target="_blank" rel="noopener">Lista 01</a></li>
 <li>
 <a href="" target="_blank" rel="noopener">Lista 02</a></li>
 <li>
