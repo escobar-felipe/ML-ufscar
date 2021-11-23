@@ -28,4 +28,5 @@ para cada um.
 <img src="avaliacao_modelo.png">
 
 4.  Atráves dos coeficientes, pode-se concluir que atritbutos como Furniture, Bathroom e area estão positivamente ligadas ao preço do aluguel. Assim , casas mais completas tentem a ter um aluguel maior do que casas mais simples. Aluguéis em SP são mais caros do que no RJ e BH.
+<img src="lasso_coeficiente.png">
  
