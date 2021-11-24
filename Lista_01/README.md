@@ -34,6 +34,6 @@ para cada um.
 5.    Foi observado uma melhora no desempenho tendo em vista que com as interações os modelos se ajustaram melhor aos dados. A regressão via Lasso se saiu melhor. A penalização faz com que o modelo fique menos flexivel aumentando o viés e diminuindo a variância tento um risco estimado melhor. Diferente da regressão via mínimos quadrados onde não tem nenhum termo para regularização, fazendo com que a variância seja maior do que a regressão via lasso. Assim o risco estimado da regressão via mínimos quadrados seja um pouco maior.
 <img src="Lasso_lr_interaction.png">
 	
-	Com o boxplot dos erros é possível verificar que a regressão via mínimos quadrados apresenta erros um pouco mais acentuados que a regressão via lasso.
+Com o boxplot dos erros é possível verificar que a regressão via mínimos quadrados apresenta erros um pouco mais acentuados que a regressão via lasso.
 <img src="boxplot.png">
 
