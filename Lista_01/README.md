@@ -15,18 +15,25 @@ para cada um.
 
 1.  Foi divido em 70% para treino e 30% para teste - essa % foi escolhida dado que 30% do dataset corresponde a 2593 linhas , dados  suficientes para se ter uma estimativa precisa do risco. A separação entre treino e teste foi realizada antes do processamento dos dados para evitar data leakage.
 
-2. O melhor valor de lambda encontrado foi 0.001.
+2. O melhor valor de lambda que minimiza o erro quadrático médio encontrado a partir da validação cruzada foi 0.001.
+<img src="lasso_lambda.png">
 
-3. Melhor modelo encontrado foi o lasso para este caso, o mesmo aprenseta o menor ERRO MÉDIO ABSOLUTO, e seu intervalo de confiança apresenta menor amplitude.
+3. Melhor modelo encontrado foi o lasso para este caso, todos os modelos apresentaram resultados parecidos. Lasso aprenseta o menor ERRO MÉDIO ABSOLUTO.
 
 | MODELOS | MAE | IC_LOWER | IC POWER |
 |---------|-----|--------- |----------|
 | LR (MQ) |1766.81  | 1664.95|1868.68|
 | LASSO |1765.13|1663.59|1866.67|
-|RIDGE|  1765.71|  1664.08|1867.35|
+| RIDGE |  1765.71|  1664.08|1867.35|
 
 <img src="avaliacao_modelo.png">
 
-4.  Atráves dos coeficientes, pode-se concluir que atritbutos como Furniture, Bathroom e area estão positivamente ligadas ao preço do aluguel. Assim , casas mais completas tentem a ter um aluguel maior do que casas mais simples. Aluguéis em SP são mais caros do que no RJ e BH.
+4.  Atráves dos coeficientes, pode-se concluir que atritbutos como Furniture, Bathroom e area estão positivamente ligadas ao preço do aluguel. Imóveis em BH tendem a ter o preço menor que SP e RJ. Essas constatações fazem total sentido tendo em vista que Imóveis mobiliados , com maior area e mais banheiros são mais caros do que imóveis mais simples.
 <img src="lasso_coeficiente.png">
- 
+
+5.    Foi observado uma melhora no desempenho, tendo em vista que com as interações os modelos se ajustaram melhor aos dados. A regressão via Lasso se saiu melhor. A penalização faz com que o modelo fique menos flexivel aumentando o viés e diminuindo a variância tento um risco estimado melhor. Diferente da regressão via mínimos quadrados onde não tem nenhum termo para regularização, fazendo com que a variância seja maior do que a regressão via lasso. Assim o risco estimado da regressão via mínimos quadrados seja um pouco maior.
+<img src="Lasso_lr_interaction.png">
+	
+	Com o boxplot dos erros é possível verificar que a regressão via mínimos quadrados apresenta erros um pouco mais acentuados que a regressão via lasso.
+<img src="boxplot.png">
+
