@@ -1,5 +1,5 @@
 
-<img src="https://i.ibb.co/k1d1njH/rent-house-73089751-5bfc333346e0fb002602ddbe.jpg">
+<img src="house_img.png">
 
 # Lista 01 
 **Exercı́cio 1**
